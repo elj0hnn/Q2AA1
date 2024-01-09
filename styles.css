@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+.shape1{
+    margin-bottom:100vh;
+    margin-right: 5vh;
+}
+.shape2{
+    margin-top: 60vh;
+    margin-left: 10vw;
+}
+.bg{
+    display: flex;
+    position: fixed;
+    background: url(set_b/2-medium/desktop-design.jpg);
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+   
+    background-repeat: no-repeat;
+}
+.box{
+    border: 2px white;
+    width: 50vw;
+    position:absolute;
+    z-index: 3;
+    background-color:white;
+}
+.card{
+    position: absolute;
+    width: 5-vw;
+    border: 2px white;
+    z-index: 2;
+    text-align: center;
+    margin-top: 40vh;
+    margin-left: 38.95vw;
+    border-radius: 100px;
+    border: 10px;
+    color: white;
+}
+.circle{
+    border-radius: 100%;
+}
+always above an element with a lower stack order:
+
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 2px solid rgb(255, 255, 255);
+  height: 100px;
+  margin: 30px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3;
+  background-image;
+  height: 60px;
+  width: 70%;
+  left: 50px;
+  top: 50px;
+  text-align: center;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2;
+  background: rgb(255, 255, 255);
+  width: 35%;
+  left: 270px;
+  margin-top: 40vh;
+  margin-left: 38.95vw;
+}
